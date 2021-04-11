@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Food</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="css/uikit.min.css" />
+</head>
+<body>
+
+    <!-- Back To Top -->
+    <div class="btp" uk-scroll>
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!-- Header -->
+    <header id="header">
+        <div class="socialSec">
+            <div class="socialmedia">
+                <div class="facebook socialicon">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="instagram socialicon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="twitter socialicon">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="pinterest socialicon">
+                    <i class="fab fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+        <nav class="uk-navbar-container" id="uknavbar" uk-navbar>
+            <div class="uk-navbar-left">
+                <a href="#" class="logo">Sweet Food</a>
+            </div>
+            <div class="uk-navbar-right">
+                <button uk-toggle="target: #sidebar" type="button" class="navbarbtn">
+                    <img src="img/menu-btn.png">
+                </button>
+            </div>
+        </nav>
+        <!-- Inside Sidebar -->
+        <div id="sidebar" uk-offcanvas>
+            <div class="uk-offcanvas-bar">
+                <div class="sidebar-close">
+                    <button class="uk-offcanvas-close" type="button">
+                        <img src="img/close.png" alt="close">
+                    </button>
+                </div>
+                <ul class="sidebar-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#ourmenu">Menu</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#">Order New Plate</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="uk-container">
+            <div class="header-center">
+                <h1>You are hungry?</h1>
+                <p>Let's Order a Perfect Plate.</p>
+                <a href="#ourmenu" class="headerbtn">Check Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="uk-container uk-container-small">
+            <section id="about">
+                <div class="innerabout">
+                    <div class="titleSection">
+                        <h1 class="title">About Us</h1>
+                    </div>
+                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s aboutcontent" uk-grid>
+                        <div class="uk-card-media-left uk-cover-container">
+                            <img src="img/about.jpeg" uk-cover>
+                            <canvas width="200" height="400"></canvas>
+                            <div class="hoverEffect"></div>
+                        </div>
+                        <div>
+                            <div class="uk-card-body aboutcard">
+                                <h3 class="uk-card-title">About Us</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, dicta aliquid nobis natus quos quod, magnam tempora atque ipsam similique explicabo aperiam eius nisi ab corrupti commodi totam ipsum suscipit ad? Autem fugit tempore aperiam amet est ad? Eligendi, aut. Unde distinctio asperiores officia, ipsum perferendis natus minima veniam. Nesciunt nobis excepturi reiciendis magni optio, quis culpa eveniet aut cumque odio ut fuga facilis perferendis quia facere enim eos suscipit. Quia dolore vitae nesciunt quo dolorum ullam saepe? Necessitatibus, eligendi ducimus ipsam eum adipisci quia autem recusandae corrupti fugiat eius.</p>
+                                <a href="#" class="sm">See more <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="ourmenu">
+                <div class="innermenu">
+                    <div class="titleSection">
+                        <h1 class="title">Menu</h1>
+                    </div>
+                    <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body menucard">
+                                <div class="innermenucard">
+                                    <img src="img/pizza.jpeg">
+                                    <h3>Perfect Paleo Pizza</h3>
+                                    <p>19.99$</p>
+                                    <a href="#" class="menuButton">Order Plate</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body menucard">
+                                <div class="innermenucard">
+                                    <img src="img/pizza.jpeg">
+                                    <h3>Perfect Paleo Pizza</h3>
+                                    <p>19.99$</p>
+                                    <a href="#" class="menuButton">Order Plate</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body menucard">
+                                <div class="innermenucard">
+                                    <img src="img/pizza.jpeg">
+                                    <h3>Perfect Paleo Pizza</h3>
+                                    <p>19.99$</p>
+                                    <a href="#" class="menuButton">Order Plate</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="smSection">
+                        <a href="#" class="seeMore">See More <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section id="contact">
+            <div class="uk-child-width-expand@s contact" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body mycard">
+                        <div class="cntinfo">
+                            <div class="uk-card uk-card-default uk-card-body mycard">
+                                <div class="contact-info">
+                                    <h3 class="ttl">Let's get in touch</h3>
+                                    <p class="text">
+                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                                      dolorum adipisci recusandae praesentium dicta!
+                                    </p>
+                                    <div class="info">
+                                      <div class="information">
+                                        <i class="fas fa-map-marker-alt icon"></i>
+                                        <p>92 Cherry Drive Uniondale, NY 11553</p>
+                                      </div>
+                                      <div class="information">
+                                        <i class="fas fa-envelope icon"></i>
+                                        <p>lorem@ipsum.com</p>
+                                      </div>
+                                      <div class="information">
+                                        <i class="fas fa-phone icon"></i>
+                                        <p>123-456-789</p>
+                                      </div>
+                                    </div>
+                                    <div class="social-media">
+                                      <p>Connect with us :</p>
+                                      <div class="social-icons">
+                                        <a href="#">
+                                          <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#">
+                                          <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#">
+                                          <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a href="#">
+                                          <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactcard">
+                    <div class="uk-card uk-card-default uk-card-body mycard">
+                        <div class="contact-form">
+                            <h3 class="ttl">Contact Us</h3>
+                            <form action="index.html">
+                                <input class="uk-input inputform" type="text" placeholder="Name">
+                                <input class="uk-input inputform" type="email" placeholder="Email">
+                                <input class="uk-input inputform" type="text" placeholder="Subject">
+                                <textarea class="uk-textarea inputform inputtextarea" rows="5" placeholder="Message"></textarea>
+                                <button type="submit" class="submitBtn">Send Message <i class="fas fa-chevron-right"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <div class="uk-container uk-container-small">
+            <section id="testimonials">
+                <div class="innertestimonials">
+                    <div class="titleSection">
+                        <h1 class="title">Testimonials</h1>
+                    </div>
+                    <div uk-slider>
+                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                                <li>
+                                    <div class="testimonial">
+                                        <article><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, delectus accusamus. Sequi accusamus aperiam sed animi amet vero iure ut. Architecto, accusamus!</article>
+                                        <div class="namesec">
+                                            <h1 class="customerName">Aimad</h1>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="testimonial">
+                                        <article><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, delectus accusamus. Sequi accusamus aperiam sed animi amet vero iure ut. Architecto, accusamus!</article>
+                                        <div class="namesec">
+                                            <h1 class="customerName">Aimad</h1>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="testimonial">
+                                        <article><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, delectus accusamus. Sequi accusamus aperiam sed animi amet vero iure ut. Architecto, accusamus!</article>
+                                        <div class="namesec">
+                                            <h1 class="customerName">Aimad</h1>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="testimonial">
+                                        <article><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, delectus accusamus. Sequi accusamus aperiam sed animi amet vero iure ut. Architecto, accusamus!</article>
+                                        <div class="namesec">
+                                            <h1 class="customerName">Aimad</h1>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="testimonial">
+                                        <article><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, delectus accusamus. Sequi accusamus aperiam sed animi amet vero iure ut. Architecto, accusamus!</article>
+                                        <div class="namesec">
+                                            <h1 class="customerName">Aimad</h1>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="testimonial">
+                                        <article><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, delectus accusamus. Sequi accusamus aperiam sed animi amet vero iure ut. Architecto, accusamus!</article>
+                                        <div class="namesec">
+                                            <h1 class="customerName">Aimad</h1>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="uk-container uk-container-small">
+            <section id="brands">
+                <div class="uk-child-width-expand@s" uk-grid>
+                    <div>
+                        <div class="brand">
+                            <a href="#" target="_blank">
+                                <img src='img/brands/brand2.png'>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="brand">
+                            <a href="#" target="_blank">
+                                <img src='img/brands/brand1.png'>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="brand">
+                            <a href="#" target="_blank">
+                                <img src='img/brands/brand3.png'>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="brand">
+                            <a href="#" target="_blank">
+                                <img src='img/brands/brand5.png'>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="uk-container uk-container-small">
+            <p class="copyright">All Copyrights Reserved By <a href="#">Sweet Food</a></p>
+        </div>
+    </footer>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4077c6ef6a.js" crossorigin="anonymous"></script>
+
+    <!-- UIkit JS -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>

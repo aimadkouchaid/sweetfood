@@ -1,0 +1,750 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+* {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/******** Back to top ********/
+.btp {
+    width: 50px;
+    height: 50px;
+    background: #4c51bf;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10000;
+}
+.btp:hover {
+    background: #6169ff;
+}
+
+
+/*============================= Header Style =============================*/
+
+/*============ navBar Style ============*/
+.uk-navbar-container {
+    height: 65px;
+    background: transparent !important;
+    padding: 0 40px;
+    transition: 0.3s;
+}
+.logo {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    text-decoration: none !important;
+    font-family: 'Pacifico';
+}
+.logo:hover {
+    color: #fff;
+}
+.navbarbtn {
+    color: #fff;
+    background: none;
+    border: none;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+.navbarbtn img {
+    width: 100%;
+    height: 100%;
+}
+.navbarbtn:hover {
+    opacity: 1;
+}
+
+/*********** Sidebar ***********/
+.uk-offcanvas-bar.uk-offcanvas-bar-animation.uk-offcanvas-slide {
+    background: #4c51bf !important;
+    box-shadow: 8px 0 40px 0 rgba(0,0,0,0.2);
+    padding: 0 !important;
+}
+.sidebar-close {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.sidebar-close button {
+    background: none;
+    border: none;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    opacity: 0.7;
+    padding: 0 !important;
+    position: unset !important;
+    margin-right: 22px;
+    transition: all 0.3s ease;
+}
+.sidebar-close button:hover {
+    opacity: 1;
+}
+.sidebar-close button img {
+    width: 100%;
+    height: 100%;
+}
+.sidebar-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    margin-top: 20px;
+}
+.sidebar-menu li {
+    height: 50px;
+}
+.sidebar-menu li a {
+    display: block;
+    color: #fff;
+    text-decoration: none !important;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.sidebar-menu li a:hover {
+    background: #fff;
+    color: #4c51bf;
+}
+
+/*************** Header Section Style ***************/
+
+header {
+    background: #4c51bf;
+    overflow: hidden;
+    position: relative;
+}
+header.darkmode {
+    background: #000 !important;
+}
+header::after {
+    content: '';
+    width: 105%;
+    height: 120px;
+    background: #fff;
+    transform: rotate(-3deg);
+    position: relative;
+    bottom: -86px;
+    left: 0;
+    display: block;
+}
+header .uk-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .socialSec {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.socialmedia {
+    width: max-content;
+    background: #757bfe;
+    color: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+}
+.socialicon {
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.socialicon:last-child {
+    margin: 0;
+}
+.header-center {
+    margin-top: 70px;
+    animation-name: slideDown;
+    animation-duration: 1s;
+}
+.header-center h1 {
+    color: #fff;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+.header-center p {
+    color: #aeb1ff;
+    text-align: center;
+    margin-top: 5px;
+}
+.headerbtn {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    color: #4c51bf;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+.headerbtn:hover {
+    background: #767cff;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*************** Menu Items Section ***************/
+.headerbtm {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuit {
+    background: url(../img/mac.png);
+    position: absolute;
+    top: -250px;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    padding-top: 32px;
+    border-radius: 6px;
+    box-shadow: 0 0 35px 0 rgba(0,0,0,.17);
+}
+.slidershow {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.menu-items {
+    padding: 10px !important;
+    box-shadow: none !important;
+}
+
+/*************** About Section ***************/
+#about {
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.titleSection {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.title {
+    font-family: "Pacifico", sans-serif !important;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0.3125em 0;
+    color: #4c51bf;
+    background-color: #fff;
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+    text-transform: none!important;
+}
+.title::before {
+    content: "";
+    height: 3px;
+    border-top: 2px solid #4c51bf;
+    border-bottom: 2px solid #4c51bf;
+    position: absolute;
+    width: 250%;
+    top: 50%;
+    left: -75%;
+    z-index: -999;
+}
+.aboutcontent {
+    margin-top: 20px !important;
+    box-shadow: none !important;
+}
+.aboutcard {
+    padding: 0 !important;
+    padding-left: 25px !important;
+}
+.sm {
+    padding: 8px 40px;
+    background: #4c51bf;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none !important;
+    border: 2px solid #4c51bf;
+    transition: all 0.3s ease;
+    margin-top: 6px;
+}
+.sm:hover {
+    color: #4c51bf;
+    background: none;
+}
+.uk-card-body a i {
+    font-size: 13px;
+    margin-left: 8px;
+}
+.uk-card-title {
+    color: #767cff !important;
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif !important;
+    margin-bottom: 0 !important;
+}
+.uk-card-body p {
+    margin-top: 10px;
+}
+.uk-card-media-left {
+    overflow: hidden !important;
+    border-radius: 15px !important;
+    position: relative !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.hoverEffect {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, #4c51bf 6%, #4c51bf4f);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.uk-card-media-left:hover .hoverEffect {
+    opacity: 1;
+}
+
+/*************** Menu Section ***************/
+#ourmenu {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.innermenu {
+    width: 100% !important;
+}
+.menucard {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+    background: none !important;
+    box-shadow: none !important;
+}
+.innermenucard {
+    padding: 0 !important;
+    background: #4c51bf !important;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 320px;
+    width: 100%;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+.innermenucard img {
+    width: 100%;
+    height: 170px;
+}
+.innermenucard h3{
+    padding: 0 5px;
+}
+.menuButton {
+    display: grid;
+    width: 100%;
+    padding: 10px 0;
+    background: #767cff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 0 16px 0 rgba(0,0,0,0.07);
+    transition: 0.3s;
+}
+.menuButton:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #767cff;
+}
+.innermenucard h3 {
+    color: #fff;
+    margin-top: 15px !important;
+    margin-bottom: 5px !important;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Ubuntu' !important;
+}
+.innermenucard p {
+    font-size: 18px;
+    color: #767cff;
+    font-family: 'Ubuntu' !important;
+    margin-top: 5px !important;
+}
+.smSection {
+    margin-top: 20px;
+    float: right;
+}
+.seeMore {
+    display: block;
+    color: #767cff;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+    width: max-content;
+}
+.seeMore:hover {
+    color: #767cff;
+}
+.seeMore i {
+    font-size: 12px;
+    margin-left: 6px;
+}
+.seeMore::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    border: none;
+    background: #767cff;
+}
+
+
+/*********** Contact Us ***********/
+#contact {
+    width: 100%;
+    background: #4c51bf;
+}
+.mycard{
+    padding: 0 !important;
+    height: 100%;
+    background: none;
+}
+.contact .uk-grid > * {
+    padding: 0 !important;
+}
+
+.contact-info {
+    padding: 28px;
+    position: relative;
+    background: #767cff;
+}
+.ttl {
+    font-family: "Pacifico", sans-serif;
+    color: #fff !important;
+    font-size: 33px;
+}
+.text {
+    color: #aeb1ff !important;
+}
+.contact-info .ttl {
+    color: #767cff;
+}  
+.text {
+    color: #333;
+    margin: 1.5rem 0 2rem 0;
+}  
+.information {
+    display: flex;
+    color: #555;
+    margin: 0.7rem 0;
+    align-items: center;
+    font-size: 0.95rem;
+    margin: 25px 0;
+}
+.information p {
+    color: #fff !important;
+    margin: 0 !important;
+}
+.icon {
+    font-size: 16px;
+    margin-right: 0.7rem;
+    color: #fff !important;
+    transform: scaleX(-1);
+}  
+.social-media {
+    padding: 2rem 0 0 0;
+}  
+.social-media p {
+    color: #fff;
+}
+.social-icons {
+    display: flex;
+    margin-top: 0.5rem;
+}  
+.social-icons a {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #5c60ad, #4c51bf);
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 0.5rem;
+    transition: 0.3s;
+}
+.social-icons a i {
+    margin: 0 !important;
+}
+.social-icons a:hover {
+    transform: scale(1.05);
+    color: #fff;
+}
+.cntinfo {
+    padding: 0 !important;
+}
+.contact .uk-card-default {
+    background: none !important;
+}
+.contact-form {
+    padding: 28px;
+    position: relative;
+    padding-left: 51px !important;
+}
+.contactcard {
+    padding: 0 !important;
+}
+.inputform {
+    background: #757bfe !important;
+    color: #fff !important;
+    border-radius: 10px !important;
+    border: 1px solid transparent !important;
+    transition: 0.3s;
+    margin: 8px 0 !important;
+}
+.inputform:first-child,
+.inputform:last-child {
+    margin: 0 !important;
+}
+.inputform:nth-child(3) {
+    margin: 0 !important;
+}
+.inputform:focus {
+    border: 1px solid #fff !important;
+}
+.uk-input.inputform::placeholder {
+    color: #aeb1ff !important;
+}
+.inputtextarea::placeholder {
+    color: #aeb1ff !important;
+}
+.inputtextarea {
+    resize: none;
+}
+.submitBtn {
+    padding: 12px 40px;
+    background: #757bfe;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.submitBtn:hover {
+    background: #6169ff;
+}
+.submitBtn i {
+    font-size: 13px;
+    margin-left: 8px;
+}
+
+/*********** testimonials ***********/
+
+#testimonials {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.innertestimonials {
+    width: 100% !important;
+}
+.testimonial {
+    background: #4c51bf;
+    padding: 18px;
+    border-radius: 5px;
+    color: #767cff;
+    padding-bottom: 0;
+    margin: 8px;
+}
+.testimonial article i {
+    margin-right: 6px;
+}
+.customerName {
+    margin: 0 !important;
+    font-family: 'Ubuntu' !important;
+    text-align: center;
+    font-size: 19px;
+    margin-top: 10px !important;
+    width: max-content;
+    background: #767cff;
+    padding: 8px 28px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-weight: 500;
+}
+.namesec {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.uk-dotnav > .uk-active > * {
+    background: #4c51bf !important;
+    border: 1px solid transparent !important;
+}
+.uk-dotnav > * > :focus, .uk-dotnav > * > :hover {
+    background: #4c51bf !important;
+}
+.uk-dotnav > * > * {
+    border: 1px solid #757bfe !important;
+}
+.uk-position-center-right.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav-next.uk-slidenav,
+.uk-position-center-left.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav-previous.uk-slidenav {
+    background: #fff !important;
+    border-radius: 50%;
+    color: #4c51bf !important;
+    padding: 8px !important;
+    width: 0;
+    height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    opacity: 0;
+    text-decoration: none !important;
+}
+.uk-position-center-right.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav-next.uk-slidenav svg,
+.uk-position-center-left.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav-previous.uk-slidenav svg {
+    display: none !important;
+}
+
+.uk-position-relative.uk-visible-toggle.uk-light:hover .uk-position-center-right.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav-next.uk-slidenav {
+    width: 40px;
+    height: 40px;
+    opacity: 1 !important;
+}
+.uk-position-relative.uk-visible-toggle.uk-light:hover .uk-position-center-left.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav-previous.uk-slidenav {
+    width: 40px;
+    height: 40px;
+    opacity: 1 !important;
+}
+/************************* Brands *************************/
+
+#brands {
+    margin: 50px 0;
+}
+.brand {
+    margin-top: 20px;
+    transition: all 0.4s ease;
+}
+.brand:hover {
+    transform: translateY(-8px);
+}
+.brand img {
+    filter: contrast(0);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.brand img:hover {
+    filter: contrast(1);
+}
+/************************* Brands *************************/
+footer {
+    background: #4c51bf;
+    padding-bottom: 40px;
+    overflow: hidden;
+    position: relative;
+}
+footer::before {
+    content: '';
+    width: 105%;
+    height: 120px;
+    background: #fff;
+    transform: rotate(-3deg);
+    position: relative;
+    top: -85px;
+    left: 0;
+    display: block;
+}
+.copyright {
+    text-align: center;
+    color: #767cff;
+}
+.copyright a {
+    color: #fff;
+    transition: 0.3s;
+    text-decoration: none !important;
+}
+.copyright a:hover {
+    color: #767cff;
+}
+
+/************************* Responsivity *************************/
+
+@media only screen and (max-width: 640px){
+    #about {
+        margin-bottom: 80px;
+    }
+    #ourmenu {
+        margin-bottom: 80px;
+    }
+    .uk-card-title {
+        text-align: center;
+    }
+    .aboutcard {
+        padding: 0 !important;
+        padding-top: 25px !important;
+        text-align: center;
+    }
+    #brands {
+        display: none;
+    }
+    .title::before {
+        width: 200%;
+        top: 50%;
+        left: -50%;
+    }
+    .title:last-child::before {
+        width: 165%;
+        top: 50%;
+        left: -32%;
+    }
+}
+
+/************************* Keyframes *************************/
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-28px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
